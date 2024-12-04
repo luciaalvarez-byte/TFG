@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="temp_1 <= 62.5\nsquared_error = 137.9\nsamples = 170\nvalue = 63.7"] ;
+1 [label="average <= 47.7\nsquared_error = 47.4\nsamples = 79\nvalue = 53.4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="month <= 6.5\nsquared_error = 20.4\nsamples = 22\nvalue = 44.9"] ;
+1 -> 2 ;
+3 [label="squared_error = 10.7\nsamples = 11\nvalue = 47.8"] ;
+2 -> 3 ;
+4 [label="squared_error = 10.1\nsamples = 11\nvalue = 41.4"] ;
+2 -> 4 ;
+5 [label="forecast_noaa <= 50.5\nsquared_error = 24.9\nsamples = 57\nvalue = 56.1"] ;
+1 -> 5 ;
+6 [label="squared_error = 15.1\nsamples = 38\nvalue = 54.0"] ;
+5 -> 6 ;
+7 [label="squared_error = 14.1\nsamples = 19\nvalue = 60.8"] ;
+5 -> 7 ;
+8 [label="temp_1 <= 66.5\nsquared_error = 52.6\nsamples = 91\nvalue = 72.2"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="friend <= 64.0\nsquared_error = 23.2\nsamples = 19\nvalue = 63.8"] ;
+8 -> 9 ;
+10 [label="squared_error = 17.9\nsamples = 11\nvalue = 60.3"] ;
+9 -> 10 ;
+11 [label="squared_error = 4.1\nsamples = 8\nvalue = 67.3"] ;
+9 -> 11 ;
+12 [label="forecast_under <= 76.5\nsquared_error = 41.8\nsamples = 72\nvalue = 73.8"] ;
+8 -> 12 ;
+13 [label="squared_error = 34.0\nsamples = 55\nvalue = 72.2"] ;
+12 -> 13 ;
+14 [label="squared_error = 29.0\nsamples = 17\nvalue = 79.2"] ;
+12 -> 14 ;
+}
